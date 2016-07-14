@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-This pod is for MConsentApps
+This pod is for MConsentApps asdf asd asda sdgads gadsg asdgla ndjklsgasd;gla dsga.ds nga s.dgasd.galkds gadsgnadls.g nasdjklga sdgkja.dsgn asdga;dsgklan sdlgnadklsgadlsg adklsgn
                    DESC
 
   s.homepage     = "https://github.com/berlinrajs/MConsentForms"
