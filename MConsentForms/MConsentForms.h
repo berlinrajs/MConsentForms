@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+//#import "MConsentForms-Swift.h"
 
 //! Project version number for MConsentForms.
 FOUNDATION_EXPORT double MConsentFormsVersionNumber;

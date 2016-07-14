@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="WorkSans-Regular.ttf">
+            <string>WorkSans-Regular</string>
+            <string>WorkSans-Regular</string>
+            <string>WorkSans-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="7im-va-5cg" customClass="YesOrNoAlert" customModule="YourCaringDentist" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i9f-AA-4YP" customClass="PDView" customModule="YourCaringDentist" customModuleProvider="target">
+                    <rect key="frame" x="174" y="378" width="420" height="212"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="VYa-3m-b2m">
+                            <rect key="frame" x="0.0" y="0.0" width="420" height="212"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="trF-hr-PDm">
+                            <rect key="frame" x="12" y="16" width="396" height="92"/>
+                            <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="20"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpn-mH-DdX" customClass="PDButton" customModule="YourCaringDentist" customModuleProvider="target">
+                            <rect key="frame" x="271" y="128" width="102" height="42"/>
+                            <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="20"/>
+                            <state key="normal" title="NO" backgroundImage="ButtonBG">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="button2Action:" destination="7im-va-5cg" eventType="touchUpInside" id="NiW-7P-6H3"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xdg-Tg-8NR" customClass="PDButton" customModule="YourCaringDentist" customModuleProvider="target">
+                            <rect key="frame" x="53" y="128" width="102" height="42"/>
+                            <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="20"/>
+                            <state key="normal" title="YES" backgroundImage="ButtonBG">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="button1Action:" destination="7im-va-5cg" eventType="touchUpInside" id="Wdg-oo-QIq"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="VYa-3m-b2m" firstAttribute="top" secondItem="i9f-AA-4YP" secondAttribute="top" id="0wH-sz-sqO"/>
+                        <constraint firstAttribute="bottom" secondItem="VYa-3m-b2m" secondAttribute="bottom" id="1C0-wU-zL9"/>
+                        <constraint firstAttribute="width" constant="420" id="ZhX-F7-Nwr"/>
+                        <constraint firstAttribute="height" constant="212" id="j6o-hO-tqg"/>
+                        <constraint firstAttribute="trailing" secondItem="VYa-3m-b2m" secondAttribute="trailing" id="jRi-fX-Njn"/>
+                        <constraint firstItem="VYa-3m-b2m" firstAttribute="leading" secondItem="i9f-AA-4YP" secondAttribute="leading" id="zOg-kf-hnH"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.40052259289999997" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="i9f-AA-4YP" firstAttribute="centerY" secondItem="7im-va-5cg" secondAttribute="centerY" constant="-28" id="ZYS-vL-fgw"/>
+                <constraint firstItem="i9f-AA-4YP" firstAttribute="centerX" secondItem="7im-va-5cg" secondAttribute="centerX" id="nKg-p7-aKm"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+            <connections>
+                <outlet property="button1" destination="Xdg-Tg-8NR" id="UT1-rd-b7G"/>
+                <outlet property="button2" destination="fpn-mH-DdX" id="g9x-Y5-8ZS"/>
+                <outlet property="labelTitle" destination="trF-hr-PDm" id="FkZ-hz-maR"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="BackgroundImage" width="768" height="1024"/>
+        <image name="ButtonBG" width="184" height="75"/>
+    </resources>
+</document>
