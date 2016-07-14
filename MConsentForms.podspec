@@ -64,11 +64,11 @@ This pod is for MConsentApps asdf asd asda sdgads gadsg asdgla ndjklsgasd;gla ds
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # s.platform     = :ios
+  s.platform     = :ios, 8.1
   # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
-  # s.ios.deployment_target = "5.0"
+  s.ios.deployment_target = "8.1"
   # s.osx.deployment_target = "10.7"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
@@ -94,7 +94,7 @@ This pod is for MConsentApps asdf asd asda sdgads gadsg asdgla ndjklsgasd;gla ds
 s.source_files  = "MConsentForms/**/*.{swift}", "MConsentForms/**/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
 
-  # s.public_header_files = "Classes/**/*.h"
+s.public_header_files = "MConsentForms/**/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -105,7 +105,7 @@ s.source_files  = "MConsentForms/**/*.{swift}", "MConsentForms/**/*.{h,m}"
   #  non-essential files like tests, examples and documentation.
   #
 
-  # s.resource  = "icon.png"
+  s.resource  = "MConsentForms/**/*.{xib,ttf}"
   # s.resources = "Resources/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
@@ -117,7 +117,7 @@ s.source_files  = "MConsentForms/**/*.{swift}", "MConsentForms/**/*.{h,m}"
   #  the lib prefix of their name.
   #
 
-s.framework  = "UIKit"
+#s.framework  = "UIKit"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
